@@ -1,10 +1,6 @@
-import {useState} from 'react';
-
-function Switch() {
-  const [status, setStatus] = useState(false);
-
+function Switch({ toggle }) {
   return (
-    <button onClick={() => setStatus(!status)}>Toggle</button>
+    <button onClick={() => toggle()}>Toggle</button>
   );
 }
 
